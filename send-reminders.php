@@ -68,7 +68,7 @@ function sendReminderEmail($appointment) {
         $mail->Port = 465;
         
         // Recipients
-        $mail->setFrom('jcalleja.k12043059@umak.edu.ph', 'Nail Architect');
+        $mail->setFrom('nailarchitect.glamhub@gmail.com', 'Nail Architect');
         $mail->addAddress($appointment['email'], $appointment['first_name'] . ' ' . $appointment['last_name']);
         
         // Format appointment details

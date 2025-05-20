@@ -27,7 +27,7 @@ function sendResetEmail($email, $firstname, $token) {
 
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
-        $mail->setFrom('jcalleja.k12043059@umak.edu.ph', 'Nail Architect');
+        $mail->setFrom('nailarchitect.glamhub@gmail.com', 'Nail Architect');
         $mail->addAddress($email);
         $mail->isHTML(true);
         $mail->Subject = 'Password Reset for Nail Architect';

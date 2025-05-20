@@ -91,7 +91,7 @@ function sendConfirmationEmail($booking_data) {
 
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
-        $mail->setFrom('jcalleja.k12043059@umak.edu.ph', 'Nail Architect');
+        $mail->setFrom('nailarchitect.glamhub@gmail.com', 'Nail Architect');
         $mail->addAddress($booking_data['email']);
         $mail->isHTML(true);
         
@@ -174,7 +174,7 @@ function sendCancellationEmail($booking_data) {
 
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
-        $mail->setFrom('jcalleja.k12043059@umak.edu.ph', 'Nail Architect');
+        $mail->setFrom('nailarchitect.glamhub@gmail.com', 'Nail Architect');
         $mail->addAddress($booking_data['email']);
         $mail->isHTML(true);
         
@@ -239,7 +239,7 @@ function sendCompletionEmail($booking_data) {
 
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
-        $mail->setFrom('jcalleja.k12043059@umak.edu.ph', 'Nail Architect');
+        $mail->setFrom('nailarchitect.glamhub@gmail.com', 'Nail Architect');
         $mail->addAddress($booking_data['email']);
         $mail->isHTML(true);
         

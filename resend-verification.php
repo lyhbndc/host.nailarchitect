@@ -38,7 +38,7 @@ function sendVerificationEmail($userEmail, $userName, $verificationToken) {
         $mail->Port = 465;
         
         // Sender and recipient
-        $mail->setFrom('jcalleja.k12043059@umak.edu.ph', 'Nail Architect');
+        $mail->setFrom('nailarchitect.glamhub@gmail.com', 'Nail Architect');
         $mail->addAddress($userEmail);
         
         // Email content

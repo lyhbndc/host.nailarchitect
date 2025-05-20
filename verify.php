@@ -3,7 +3,7 @@
 session_start();
 
 // Database connection
-$conn = mysqli_connect("localhost", "root", "", "nail_architect_db");
+$conn = mysqli_connect("localhost", "u283492965_nailarchitect", "WrongDirection432!", "u283492965_nailarchidb");
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
@@ -271,7 +271,7 @@ mysqli_close($conn);
                 </div>
                 
                 <?php if ($status == 'success' || $status == 'info'): ?>
-                <a href="login.php" class="verification-button">Log In Now</a>
+                    <a href="https://nailarchitect.com/login.php" class="verification-button">Log In Now</a>
                 <?php elseif ($status == 'error'): ?>
                 <a href="resend-verification.php" class="verification-button">Resend Verification</a>
                 <?php endif; ?>

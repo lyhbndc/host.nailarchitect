@@ -7,9 +7,9 @@ date_default_timezone_set('Asia/Manila');
 // Basic configuration
 $config = [
     'db_host' => $_ENV['DB_HOST'] ?? 'localhost',
-    'db_user' => $_ENV['DB_USER'] ?? 'root',
-    'db_pass' => $_ENV['DB_PASS'] ?? '',
-    'db_name' => $_ENV['DB_NAME'] ?? 'nail_architect_db',
+    'db_user' => $_ENV['DB_USER'] ?? 'u283492965_nailarchitect',
+    'db_pass' => $_ENV['DB_PASS'] ?? 'WrongDirection432!',
+    'db_name' => $_ENV['DB_NAME'] ?? 'u283492965_nailarchidb',
     'backup_dir' => __DIR__ . '/backups/',
     'max_backups' => 10 // Keep only latest 10 backups
 ];
@@ -522,9 +522,9 @@ $backups = getBackupFiles($config['backup_dir']);
                 <div class="menu-text">Backup & Restore</div>
             </div>
             
-            <div class="menu-item" onclick="window.location.href='logout.php'">
-                <div class="menu-icon"><i class="fas fa-sign-out-alt"></i></div>
-                <div class="menu-text">Logout</div>
+<div class="menu-item" onclick="window.location.href='https://nailarchitect.com/logout.php'">
+    <div class="menu-icon"><i class="fas fa-sign-out-alt"></i></div>
+    <div class="menu-text">Logout</div>
             </div>
         </div>
     </div>

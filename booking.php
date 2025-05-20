@@ -20,7 +20,7 @@ if ($logged_in) {
     $first_letter = substr($_SESSION['user_name'], 0, 1);
 
     // Connect to database to get user info
-    $conn = mysqli_connect("localhost", "root", "", "nail_architect_db");
+    $conn = mysqli_connect("localhost", "u283492965_nailarchitect", "WrongDirection432!", "u283492965_nailarchidb");
     if ($conn) {
         $user_id = $_SESSION['user_id'];
         $query = "SELECT first_name, last_name, email, phone FROM users WHERE id = ?";

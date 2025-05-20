@@ -519,7 +519,7 @@
                     46 Osmena St., TS Cruz Subdivision<br>
                     Novaliches, Quezon City<br>
                     Phone: (212) 555-7890<br>
-                    Email: legal@nailarchitect.com
+                    Email: legal@localhost
                 </p>
             </div>
             

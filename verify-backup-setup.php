@@ -12,7 +12,7 @@ echo "Memory Limit: " . ini_get('memory_limit') . "<br><br>";
 
 // 2. Check database connection
 echo "<h3>2. Database Connection</h3>";
-$conn = @mysqli_connect("localhost", "root", "", "nail_architect_db");
+$conn = @mysqli_connect("localhost", "u283492965_nailarchitect", "WrongDirection432!", "u283492965_nailarchidb");
 if ($conn) {
     echo "✓ Database connection successful<br>";
     mysqli_close($conn);

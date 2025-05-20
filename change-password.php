@@ -4,7 +4,7 @@ session_start();
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-$conn = mysqli_connect("localhost", "root", "", "nail_architect_db");
+$conn = mysqli_connect("localhost", "u283492965_nailarchitect", "WrongDirection432!", "u283492965_nailarchidb");
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
@@ -96,11 +96,12 @@ function sendPasswordChangedEmail($email, $firstname) {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'nailarchitect.glamhub@gmail.com';
+         $mail->Username = 'nailarchitect.glamhub@gmail.com';
         $mail->Password = 'xvft ygzc fijz vmth';
+
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
-        $mail->setFrom('nailarchitect.glamhub@gmail.com', 'Nail Architect');
+        $mail->setFrom('jcalleja.k12043059@umak.edu.ph', 'Nail Architect');
         $mail->addAddress($email);
         $mail->isHTML(true);
         $mail->Subject = 'Your Nail Architect Password Has Been Changed';

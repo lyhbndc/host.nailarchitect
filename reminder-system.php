@@ -30,7 +30,7 @@ function checkAndSendReminders() {
     }
     
     // Database connection
-    $conn = mysqli_connect("localhost", "root", "", "nail_architect_db");
+    $conn = mysqli_connect("localhost", "u283492965_nailarchitect", "WrongDirection432!", "u283492965_nailarchidb");
     if (!$conn) {
         error_log("Reminder system - DB connection failed: " . mysqli_connect_error());
         return;
@@ -79,13 +79,13 @@ function checkAndSendReminders() {
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'nailarchitect.glamhub@gmail.com';
-            $mail->Password = 'xvft ygzc fijz vmth';
+            $mail->Username = 'jcalleja.k12043059@umak.edu.ph';
+            $mail->Password = 'pjcu jxec zzbc rbso';
             $mail->SMTPSecure = 'ssl';
             $mail->Port = 465;
             
             // Recipients
-            $mail->setFrom('nailarchitect.glamhub@gmail.com', 'Nail Architect');
+            $mail->setFrom('jcalleja.k12043059@umak.edu.ph', 'Nail Architect');
             $mail->addAddress($appointment['email'], $appointment['first_name'] . ' ' . $appointment['last_name']);
             
             // Content

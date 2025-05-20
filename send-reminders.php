@@ -9,7 +9,7 @@ error_reporting(E_ALL);
 error_log("Running reminder script at " . date('Y-m-d H:i:s'));
 
 // Database connection
-$conn = mysqli_connect("localhost", "root", "", "nail_architect_db");
+$conn = mysqli_connect("localhost", "u283492965_nailarchitect", "WrongDirection432!", "u283492965_nailarchidb");
 if (!$conn) {
     error_log("Reminder system - DB connection failed: " . mysqli_connect_error());
     die("Database connection failed");
@@ -61,13 +61,14 @@ function sendReminderEmail($appointment) {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'nailarchitect.glamhub@gmail.com';
+         $mail->Username = 'nailarchitect.glamhub@gmail.com';
         $mail->Password = 'xvft ygzc fijz vmth';
+
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
         
         // Recipients
-        $mail->setFrom('nailarchitect.glamhub@gmail.com', 'Nail Architect');
+        $mail->setFrom('jcalleja.k12043059@umak.edu.ph', 'Nail Architect');
         $mail->addAddress($appointment['email'], $appointment['first_name'] . ' ' . $appointment['last_name']);
         
         // Format appointment details

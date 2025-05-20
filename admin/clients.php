@@ -340,9 +340,9 @@ $newClients = mysqli_fetch_assoc($newClientsResult)['count'];
                 <div class="menu-text">Backup & Restore</div>
             </div>
             
-            <div class="menu-item" onclick="window.location.href='logout.php'">
-                <div class="menu-icon"><i class="fas fa-sign-out-alt"></i></div>
-                <div class="menu-text">Logout</div>
+<div class="menu-item" onclick="window.location.href='https://nailarchitect.com/logout.php'">
+    <div class="menu-icon"><i class="fas fa-sign-out-alt"></i></div>
+    <div class="menu-text">Logout</div>
             </div>
         </div>
     </div>
@@ -510,7 +510,7 @@ $newClients = mysqli_fetch_assoc($newClientsResult)['count'];
         
        // Export button functionality
         document.querySelector('.export-btn').addEventListener('click', () => {
-        window.location.href = 'export-clients.php';
+        window.location.href = 'https://nailarchitect.com/export-clients.php';
         });
     </script>
 </body>

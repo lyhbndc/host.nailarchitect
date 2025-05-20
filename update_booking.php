@@ -11,7 +11,7 @@ if (!isset($_SESSION['user_id'])) {
 $response = ['success' => false, 'message' => 'Invalid request'];
 
 // Database connection
-$conn = mysqli_connect("localhost", "root", "", "nail_architect_db");
+$conn = mysqli_connect("localhost", "u283492965_nailarchitect", "WrongDirection432!", "u283492965_nailarchidb");
 if (!$conn) {
     $response['message'] = "Database connection failed";
     echo json_encode($response);

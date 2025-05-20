@@ -3,7 +3,7 @@
 session_start();
 
 // Database connection
-$conn = mysqli_connect("localhost", "root", "", "nail_architect_db");
+$conn = mysqli_connect("localhost", "u283492965_nailarchitect", "WrongDirection432!", "u283492965_nailarchidb");
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
@@ -31,13 +31,14 @@ function sendVerificationEmail($userEmail, $userName, $verificationToken) {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'nailarchitect.glamhub@gmail.com';
+         $mail->Username = 'nailarchitect.glamhub@gmail.com';
         $mail->Password = 'xvft ygzc fijz vmth';
+
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
         
         // Sender and recipient
-        $mail->setFrom('nailarchitect.glamhub@gmail.com', 'Nail Architect');
+        $mail->setFrom('jcalleja.k12043059@umak.edu.ph', 'Nail Architect');
         $mail->addAddress($userEmail);
         
         // Email content
@@ -45,7 +46,7 @@ function sendVerificationEmail($userEmail, $userName, $verificationToken) {
         $mail->Subject = 'Verify Your Nail Architect Account';
         
         // Generate verification URL - MATCH THE URL FORMAT FROM sign-up.php
-        $verifyUrl = 'localhost/nailarchitect/verify.php?email=' . urlencode($userEmail) . '&token=' . $verificationToken;
+        $verifyUrl = 'https://nailarchitect.com/verify.php?email=' . urlencode($userEmail) . '&token=' . $verificationToken;
         
         // Email body
         $mail->Body = '
@@ -365,7 +366,7 @@ mysqli_close($conn);
                 <?php endif; ?>
                 
                 <?php if ($status != 'success' && $status != 'info'): ?>
-                <form method="POST" action="">
+                <form method="POST" action="WrongDirection432!">
                     <div class="form-group">
                         <label for="email">Email Address</label>
                         <input type="email" id="email" name="email" placeholder="Enter your email address" required>

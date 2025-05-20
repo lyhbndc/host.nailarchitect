@@ -1,6 +1,6 @@
 <?php
 // Database connection
-$conn = mysqli_connect("localhost", "root", "", "nail_architect_db");
+$conn = mysqli_connect("localhost", "u283492965_nailarchitect", "WrongDirection432!", "u283492965_nailarchidb");
 if (!$conn) {
     die(json_encode(['success' => false, 'message' => 'Database connection failed']));
 }

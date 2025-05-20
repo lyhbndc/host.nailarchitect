@@ -5,7 +5,7 @@ session_start();
 require_once '2fa-functions.php';
 
 // Database connection
-$conn = mysqli_connect("localhost", "root", "", "nail_architect_db");
+$conn = mysqli_connect("localhost", "u283492965_nailarchitect", "WrongDirection432!", "u283492965_nailarchidb");
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }

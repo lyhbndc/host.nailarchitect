@@ -17,7 +17,7 @@ if (!isset($_SESSION['user_id'])) {
 }
 
 // Database connection
-$conn = mysqli_connect("localhost", "root", "", "nail_architect_db");
+$conn = mysqli_connect("localhost", "u283492965_nailarchitect", "WrongDirection432!", "u283492965_nailarchidb");
 if (!$conn) {
     error_log("Database connection failed: " . mysqli_connect_error());
     echo json_encode(['success' => false, 'message' => 'Database connection failed: ' . mysqli_connect_error()]);

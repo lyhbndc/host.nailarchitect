@@ -276,7 +276,7 @@
             </div>
             
             <div class="footer-message">
-                If you have any questions, please contact us at (0932) 432 3142 or email hello@nailarchitect.com
+                If you have any questions, please contact us at (0932) 432 3142 or email hello@localhost
             </div>
         </div>
     </div>

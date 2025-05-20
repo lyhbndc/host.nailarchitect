@@ -1,7 +1,7 @@
 <?php
 // Start session and database connection
 session_start();
-$conn = mysqli_connect("localhost", "root", "", "nail_architect_db");
+$conn = mysqli_connect("localhost", "u283492965_nailarchitect", "WrongDirection432!", "u283492965_nailarchidb");
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
@@ -662,9 +662,9 @@ $active_admins = mysqli_query($conn, $active_admins_query)->fetch_assoc()['count
                 <div class="menu-text">Backup & Restore</div>
             </div>
             
-            <div class="menu-item" onclick="window.location.href='admin-logout.php'">
-                <div class="menu-icon"><i class="fas fa-sign-out-alt"></i></div>
-                <div class="menu-text">Logout</div>
+<div class="menu-item" onclick="window.location.href='https://nailarchitect.com/logout.php'">
+    <div class="menu-icon"><i class="fas fa-sign-out-alt"></i></div>
+    <div class="menu-text">Logout</div>
             </div>
         </div>
     </div>

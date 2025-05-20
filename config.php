@@ -1,9 +1,9 @@
 <?php
 // Database credentials
 $servername = "localhost";
-$username = "root";      // default XAMPP username
-$password = "";          // default XAMPP password is empty
-$dbname = "nail_architect_db";
+$username = "u283492965_nailarchitect";      // default XAMPP username
+$password = "WrongDirection432!";          // default XAMPP password is empty
+$dbname = "u283492965_nailarchidb";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

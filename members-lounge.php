@@ -2226,7 +2226,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const selectedDate = this.value;
         if (selectedDate) {
             // Fetch available times for the selected date
-            fetch('get-available-times.php?date=' + selectedDate)
+            fetch('admin/get-available-times.php?date=' + selectedDate)
                 .then(response => response.json())
                 .then(data => {
                     if (data.success) {

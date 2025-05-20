@@ -900,7 +900,7 @@ if ($logged_in) {
         timeSelect.add(loadingOption);
 
         // Fetch available times from server
-        fetch('get-available-times.php?date=' + date)
+        fetch('admin/get-available-times.php?date=' + date)
             .then(response => response.json())
             .then(data => {
                 // Remove loading option
